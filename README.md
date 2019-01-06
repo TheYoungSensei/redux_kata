@@ -1,1 +1,1 @@
-# redux_kata
+# React Redux Kata
