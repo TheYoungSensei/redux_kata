@@ -11,14 +11,7 @@ class Home extends PureComponent {
 
     currentView: PropTypes.string.isRequired,
     enterHome: PropTypes.func.isRequired,
-    leaveHome: PropTypes.func.isRequired,
-
-    counter: PropTypes.number.isRequired,
-    loading: PropTypes.bool.isRequired,
-
-    increment: PropTypes.func.isRequired,
-    decrement: PropTypes.func.isRequired,
-    double: PropTypes.func.isRequired
+    leaveHome: PropTypes.func.isRequired
   };
 
   componentDidMount() {
@@ -31,25 +24,9 @@ class Home extends PureComponent {
     leaveHome();
   }
 
-  onIncrement = () => {
-    const {increment} = this.props;
-    increment();
-  };
-
-  onDecrement = () => {
-    const {decrement} = this.props;
-    decrement();
-  };
-
-  onDouble = () => {
-    const {double} = this.props;
-    double();
-  };
-
   render() {
-    const { counter, loading } = this.props;
     return (
-      <Counter value={counter} increment={this.onIncrement} decrement={this.onDecrement} double={this.onDouble} loading={loading}/>
+      <div>Implement counter.</div>
     );
   }
 }

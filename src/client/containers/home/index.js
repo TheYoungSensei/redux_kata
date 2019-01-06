@@ -10,9 +10,7 @@ import Home from './Home';
 const mapStateToProps = (state) => {
   return {
     // views
-    currentView: state.views.currentView,
-    counter: state.counter.value,
-    loading: state.counter.loading
+    currentView: state.views.currentView
   };
 };
 
@@ -21,10 +19,7 @@ const mapDispatchToProps = (dispatch) => {
     {
       // views
       enterHome: viewsActions.enterHome,
-      leaveHome: viewsActions.leaveHome,
-      increment: counterActions.increment,
-      decrement: counterActions.decrement,
-      double: counterActions.doubleAsync
+      leaveHome: viewsActions.leaveHome
     },
     dispatch
   );
