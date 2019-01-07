@@ -9,7 +9,6 @@ export class Counter extends PureComponent {
     return(
       <div>
 
-
       </div>
     );
   }
