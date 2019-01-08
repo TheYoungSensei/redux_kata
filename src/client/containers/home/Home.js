@@ -50,6 +50,7 @@ class Home extends PureComponent {
           <li>Some components to display the value of the counter and to increment/decrement/double it.</li>
           <li>A container to display the components and handle the events.</li>
         </ul>
+        <p>For this kata, you also have to follow the Smart / Dumb components rule.</p>
         <p>More information about Redux can be found <a href="https://redux.js.org/">here</a></p>
       </Layout.Content>
     );
